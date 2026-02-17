@@ -1,76 +1,23 @@
-```bash
-jupyter notebook titanic_disaster.ipynb
-```
-**Titanic disaster** dataset’ini keşfedelim.
+# Titanic Data Analysis Project (Exploratory Data Analysis)
 
-Keşfedebileceğin bazı ilginç noktalar:
+This project performs an Exploratory Data Analysis (EDA) on the famous Titanic disaster dataset. It covers the fundamental steps of data science: data cleaning, grouping, and visualization.
 
-1. Dataset’e alışalım (import etme, head(), describe(), column açıklamalarını okuma…)
-2. Cabin bilgisini dataset’ten çıkaralım çünkü cabin number hakkında yeterli veri yok (dataset cleaning)
-3. Sınıf bir biletin hayatta kalma şansını artırıp artırmadığını bul.
-   Burada yapılacak şey: ticket type’a göre survival rate karşılaştırması.
-4. Daha fazla kadın ve çocuğun kurtarılıp kurtarılmadığını bul.
-   Burada [‘Men’, ‘Children’, ‘Women’] için survival rate karşılaştır.
+## Project Content & Analysis
+The following analytical steps were implemented in this project:
 
-**Opsiyonel**
+* **Data Cleaning:** The `Cabin` column, which had a high density of missing values (687 missing entries), was removed from the dataset.
+* **Class Analysis:** Distribution of passenger classes (1st, 2nd, and 3rd) and their survival rates were compared.
+* **Gender Analysis:** Survival probabilities of male and female passengers were visualized and compared.
+* **Children Analysis:** Passengers under the age of 18 were filtered to compare their survival rates against adults.
+* **Advanced Analysis (Optional):** The impact of family size (`FamilySize`) and passenger titles (`Title`) on survival was explored.
 
-5. Büyük ailelerin hayatta kalmasının daha mı zor olduğunu bul.   
-   Bunun için dataframe’e bir family size column’ı ekle.
-6. Ünvanı (Mr, Mrs, Dr vb.) olan yolcular tahliyede daha mı çok tercih edildi?
-   Bunu incelemek için string manipulation yaparak her yolcu için bir title column’ı oluştur.
+## Technologies Used
+* **Python 3.12**
+* **Pandas:** For data manipulation and analysis.
+* **NumPy:** For matrix and numerical calculations.
+* **Matplotlib:** For data visualization (Bar charts, Histograms).
 
-<table>
-<tbody>
-<tr><th><b>Variable</b></th><th><b>Definition</b></th><th><b>Key</b></th></tr>
-<tr>
-<td>survival</td>
-<td>Survival</td>
-<td>0 = No, 1 = Yes</td>
-</tr>
-<tr>
-<td>pclass</td>
-<td>Ticket class</td>
-<td>1 = 1st, 2 = 2nd, 3 = 3rd</td>
-</tr>
-<tr>
-<td>sex</td>
-<td>Sex</td>
-<td></td>
-</tr>
-<tr>
-<td>Age</td>
-<td>Age in years</td>
-<td></td>
-</tr>
-<tr>
-<td>sibsp</td>
-<td># of siblings / spouses aboard the Titanic</td>
-<td></td>
-</tr>
-<tr>
-<td>parch</td>
-<td># of parents / children aboard the Titanic</td>
-<td></td>
-</tr>
-<tr>
-<td>ticket</td>
-<td>Ticket number</td>
-<td></td>
-</tr>
-<tr>
-<td>fare</td>
-<td>Passenger fare</td>
-<td></td>
-</tr>
-<tr>
-<td>cabin</td>
-<td>Cabin number</td>
-<td></td>
-</tr>
-<tr>
-<td>embarked</td>
-<td>Port of Embarkation</td>
-<td>C = Cherbourg, Q = Queenstown, S = Southampton</td>
-</tr>
-</tbody>
-</table>
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/cevdetkopuz/data-titanic_disaster-.git](https://github.com/cevdetkopuz/data-titanic_disaster-.git)
